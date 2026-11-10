@@ -1,16 +1,33 @@
-## Hi there 👋
+# `bootloader99` — system online.
 
-<!--
-**bootloader99/bootloader99** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Hey, I'm Hisham.
 
-Here are some ideas to get you started:
+I'm a developer who enjoys figuring out how things work, building useful software, and occasionally breaking things just to understand them better.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+My journey started with Android rooting and custom ROMs. That curiosity eventually led me into mobile development, and I've spent the last 4 years building applications with React Native.
+
+## `$ what-i-build`
+
+**Mobile applications**  
+React Native, TypeScript, JavaScript — from new features to complete app experiences.
+
+**Independent products**  
+I enjoy building software of my own, including offline-first tools designed around real-world problems.
+
+**Games**  
+I also experiment with Unity and C#, creating small games and learning through the process.
+
+## `$ current-interests`
+
+- Android internals, bootloaders and custom ROMs
+- Linux and operating system fundamentals
+- Software architecture and performance
+- Building independent products
+
+## `$ find-me`
+
+[Portfolio](https://hishamdev.netlify.app) · [GitHub projects](https://github.com/bootloader99) · [Game projects](https://warpredator.itch.io)
+
+---
+
+<sub>Still curious. Still building. Still exploring what's under the hood.</sub>
