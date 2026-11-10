@@ -1,33 +1,26 @@
-# `bootloader99` — system online.
+![Hisham — mobile developer and independent builder](./assets/profile-header.svg)
 
-Hey, I'm Hisham.
+I'm a mobile app developer with **4 years of experience building with React Native**. I started out tinkering with Android rooting and custom ROMs, and that curiosity gradually turned into a career in software.
 
-I'm a developer who enjoys figuring out how things work, building useful software, and occasionally breaking things just to understand them better.
+I like building things, understanding what's happening under the hood, and making useful ideas real.
 
-My journey started with Android rooting and custom ROMs. That curiosity eventually led me into mobile development, and I've spent the last 4 years building applications with React Native.
+### What keeps me building
 
-## `$ what-i-build`
+| **Mobile** | **Independent products** | **Games** |
+|:--:|:--:|:--:|
+| React Native · TypeScript | Offline-first software | Unity · C# |
+| Apps, architecture & performance | Small tools for real problems | Small experiments & prototypes |
 
-**Mobile applications**  
-React Native, TypeScript, JavaScript — from new features to complete app experiences.
-
-**Independent products**  
-I enjoy building software of my own, including offline-first tools designed around real-world problems.
-
-**Games**  
-I also experiment with Unity and C#, creating small games and learning through the process.
-
-## `$ current-interests`
+### Currently curious about
 
 - Android internals, bootloaders and custom ROMs
 - Linux and operating system fundamentals
 - Software architecture and performance
-- Building independent products
 
-## `$ find-me`
+### Elsewhere
 
-[Portfolio](https://hishamdev.netlify.app) · [GitHub projects](https://github.com/bootloader99) · [Game projects](https://warpredator.itch.io)
+[Portfolio ↗](https://hishamdev.netlify.app) &nbsp; · &nbsp; [Game projects ↗](https://warpredator.itch.io)
 
 ---
 
-<sub>Still curious. Still building. Still exploring what's under the hood.</sub>
+<sub><code>still curious</code> · <code>still building</code> · <code>still exploring what's under the hood</code></sub>
