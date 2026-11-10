@@ -1,26 +1,26 @@
-![Hisham — mobile developer and independent builder](./assets/profile-header.svg)
+![Hisham — engineer and independent builder](./assets/profile-header.svg)
 
-I'm Hisham, a mobile app developer with **4 years of experience building with React Native**.
+I'm Hisham. I enjoy taking a problem apart, understanding what actually needs solving, and building something useful from it.
 
-My interest in technology started with Android rooting and custom ROMs. I wanted to know what was happening beneath the screen — and that curiosity eventually led me into building apps, experimenting with game development, and creating products of my own.
+My path into software began with curiosity about what happens beneath the surface — rooting Android devices, exploring custom ROMs, and learning how systems fit together. That curiosity grew into professional software development, but the interesting part has always been the problem itself: understanding the people, constraints and details, then finding a thoughtful way to solve it.
 
-### A few things I enjoy building
+### The work, not just the tools
 
-| **Mobile development** | **Independent products** | **Game development** |
-|:--:|:--:|:--:|
-| React Native · TypeScript | Product ideas · Practical tools | Unity · C# |
-| Features, interfaces & app architecture | Designing, building & refining | Gameplay experiments & prototypes |
+I enjoy moving between different kinds of problems: shaping an app experience, working through architecture, making an existing system more reliable, or experimenting with a game mechanic. The technology follows the problem.
 
-### Things I'm exploring
+I've spent the last **4 years building mobile applications**, primarily with React Native, and I also make games and prototypes with Unity. Those are parts of a wider interest in making software that works well and feels considered.
 
-- Android internals, bootloaders and custom ROMs
-- Linux and operating system fundamentals
-- Software architecture, performance and the details under the hood
+### A few areas I keep coming back to
 
-### Find me elsewhere
+- **Building products** — turning rough ideas into useful, usable experiences
+- **Understanding systems** — Android, Linux, bootloaders and what happens under the hood
+- **Engineering craft** — architecture, performance, reliability and continuous refinement
+- **Creative experiments** — game mechanics, small prototypes and ideas worth exploring
+
+### Elsewhere
 
 [Portfolio ↗](https://hishamdev.netlify.app) &nbsp; · &nbsp; [Games on itch.io ↗](https://warpredator.itch.io)
 
 ---
 
-<sub><code>stay curious</code> · <code>keep building</code> · <code>look under the hood</code></sub>
+<sub>Understand the problem. Explore the possibilities. Build with intent.</sub>
