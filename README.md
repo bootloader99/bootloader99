@@ -1,26 +1,26 @@
 ![Hisham — mobile developer and independent builder](./assets/profile-header.svg)
 
-I'm a mobile app developer with **4 years of experience building with React Native**. I started out tinkering with Android rooting and custom ROMs, and that curiosity gradually turned into a career in software.
+I'm Hisham, a mobile app developer with **4 years of experience building with React Native**.
 
-I like building things, understanding what's happening under the hood, and making useful ideas real.
+My interest in technology started with Android rooting and custom ROMs. I wanted to know what was happening beneath the screen — and that curiosity eventually led me into building apps, experimenting with game development, and creating products of my own.
 
-### What keeps me building
+### A few things I enjoy building
 
-| **Mobile** | **Independent products** | **Games** |
+| **Mobile development** | **Independent products** | **Game development** |
 |:--:|:--:|:--:|
-| React Native · TypeScript | Offline-first software | Unity · C# |
-| Apps, architecture & performance | Small tools for real problems | Small experiments & prototypes |
+| React Native · TypeScript | Product ideas · Practical tools | Unity · C# |
+| Features, interfaces & app architecture | Designing, building & refining | Gameplay experiments & prototypes |
 
-### Currently curious about
+### Things I'm exploring
 
 - Android internals, bootloaders and custom ROMs
 - Linux and operating system fundamentals
-- Software architecture and performance
+- Software architecture, performance and the details under the hood
 
-### Elsewhere
+### Find me elsewhere
 
-[Portfolio ↗](https://hishamdev.netlify.app) &nbsp; · &nbsp; [Game projects ↗](https://warpredator.itch.io)
+[Portfolio ↗](https://hishamdev.netlify.app) &nbsp; · &nbsp; [Games on itch.io ↗](https://warpredator.itch.io)
 
 ---
 
-<sub><code>still curious</code> · <code>still building</code> · <code>still exploring what's under the hood</code></sub>
+<sub><code>stay curious</code> · <code>keep building</code> · <code>look under the hood</code></sub>
