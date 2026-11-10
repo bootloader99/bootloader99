@@ -1,33 +1,38 @@
+![Hisham — curious engineer, building with intent](./assets/profile-header.svg)
+
 <div align="center">
 
-# I like knowing what’s underneath.
+### Not here to collect frameworks. Here to make things work.
 
-**Hisham** · Software engineer · Builder of things
-
-*Curiosity got me into technology. Solving problems keeps me here.*
+I’m Hisham — a software engineer driven by curiosity, a good problem, and the satisfaction of turning an idea into something real.
 
 </div>
 
 ---
 
-I started by rooting Android phones and trying custom ROMs. Not because I had a plan to become a developer — I just wanted to know how the thing worked, and what else it could do.
+I got into technology by taking things apart: rooting Android phones, trying custom ROMs, wondering what was happening beneath the interface. That instinct never really left. It just evolved from **figuring out how things work** to **building things that work well**.
 
-Somewhere along the way, taking things apart turned into building them.
-
-Now I work across software: mobile apps, product ideas, game experiments, and the less glamorous but equally satisfying work of making systems clearer, faster and more reliable. I’ve spent **4 years building mobile applications**, with React Native among the tools I use, and I also build with Unity.
-
-I’m less attached to a particular stack than to the question in front of me. Pick the right tools, understand the constraints, make it work, then make it better.
-
-### Currently down the rabbit hole
-
-`Android internals`　 `Linux`　 `software architecture`　 `game mechanics`
-
----
+These days that can mean a mobile app, an independent product, a game prototype, or digging into a system-level question. I've spent **4 years building mobile applications**, and worked with tools like React Native and Unity along the way. They're part of the toolbox — the problem decides what belongs in it.
 
 <div align="center">
 
-[**My portfolio**](https://hishamdev.netlify.app)　·　[**My games**](https://warpredator.itch.io)
+**CURIOUS BY NATURE**　·　**PRACTICAL BY DESIGN**　·　**ALWAYS EXPERIMENTING**
 
-<sub>Still opening things up to see how they work.</sub>
+</div>
+
+---
+
+<details>
+<summary><b>Currently exploring</b></summary>
+
+Android internals · Linux · software architecture · game mechanics · the details under the hood.
+
+</details>
+
+<div align="center">
+
+[**Portfolio**](https://hishamdev.netlify.app)　　[**Games**](https://warpredator.itch.io)
+
+<sub>Take things apart. Learn something. Build something better.</sub>
 
 </div>
