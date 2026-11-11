@@ -1,88 +1,82 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="270" viewBox="0 0 1000 270" role="img" aria-label="Hisham — curious engineer, building with intent">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1424"/>
-      <stop offset=".58" stop-color="#142635"/>
-      <stop offset="1" stop-color="#17352f"/>
+      <stop offset="0" stop-color="#0b1424"/><stop offset=".58" stop-color="#142635"/><stop offset="1" stop-color="#17352f"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#72e2bf"/>
-      <stop offset="1" stop-color="#91b5ff"/>
+      <stop offset="0" stop-color="#72e2bf"/><stop offset="1" stop-color="#91b5ff"/>
     </linearGradient>
-    <radialGradient id="glow">
-      <stop offset="0" stop-color="#72e2bf" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#72e2bf" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <radialGradient id="aura"><stop offset="0" stop-color="#72e2bf" stop-opacity=".25"/><stop offset="1" stop-color="#72e2bf" stop-opacity="0"/></radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-    <path d="M32 0H0V32" fill="none" stroke="#dcecff" stroke-opacity=".055" stroke-width="1"/>
-  </pattern>
-  <rect width="1000" height="270" rx="18" fill="url(#bg)"/>
-  <rect width="1000" height="270" rx="18" fill="url(#grid)"/>
-  <circle cx="855" cy="90" r="190" fill="url(#glow)">
-    <animate attributeName="opacity" values=".55;.95;.55" dur="7s" repeatCount="indefinite"/>
-  </circle>
-  <g fill="none" stroke="url(#accent)" stroke-opacity=".2">
-    <circle cx="865" cy="112" r="88" stroke-dasharray="2 9"/>
-    <circle cx="865" cy="112" r="116" stroke-dasharray="1 13">
-      <animateTransform attributeName="transform" type="rotate" from="0 865 112" to="360 865 112" dur="55s" repeatCount="indefinite"/>
-    </circle>
-  </g>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#dcecff" stroke-opacity=".055"/></pattern>
+  <rect width="1000" height="270" rx="18" fill="url(#bg)"/><rect width="1000" height="270" rx="18" fill="url(#grid)"/>
+  <circle cx="870" cy="112" r="190" fill="url(#aura)"><animate attributeName="opacity" values=".55;1;.55" dur="6s" repeatCount="indefinite"/></circle>
+  <g fill="none" stroke="url(#accent)" stroke-opacity=".22"><circle cx="870" cy="112" r="82" stroke-dasharray="2 9"/><circle cx="870" cy="112" r="112" stroke-dasharray="1 13"><animateTransform attributeName="transform" type="rotate" from="0 870 112" to="360 870 112" dur="55s" repeatCount="indefinite"/></circle></g>
 
-  <!-- The profile begins concealed; the unlock pulse reveals the story beneath -->
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <!-- Profile content is revealed by the unlock pulse -->
+  <g id="profile-copy" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
     <text x="62" y="54" fill="#9bb0c2" font-size="13" letter-spacing="2">A MINDSET, NOT A STACK</text>
     <text x="60" y="126" fill="#f4f7fb" font-size="51" font-weight="700" letter-spacing="-1.8">Hey, I'm Hisham.</text>
     <text x="63" y="169" fill="#c5d2df" font-size="20">Curious about how things work. Driven to make them work better.</text>
     <text x="63" y="218" fill="#72e2bf" font-size="15">observe <tspan fill="#91b5ff">/</tspan> question <tspan fill="#91b5ff">/</tspan> build <tspan fill="#91b5ff">/</tspan> improve</text>
-    <rect x="416" y="204" width="9" height="19" rx="1" fill="url(#accent)">
-      <animate attributeName="opacity" values="1;0;1" dur="1.15s" repeatCount="indefinite"/>
-    </rect>
+    <rect x="416" y="204" width="9" height="19" rx="1" fill="url(#accent)"><animate attributeName="opacity" values="1;0;1" dur="1.15s" repeatCount="indefinite"/></rect>
   </g>
   <path d="M62 244H938" stroke="url(#accent)" stroke-opacity=".7" stroke-width="2"/>
-  <path d="M62 244H938" stroke="#ffffff" stroke-opacity=".5" stroke-width="1" stroke-dasharray="65 900">
-    <animate attributeName="stroke-dashoffset" values="965;0" dur="8s" repeatCount="indefinite"/>
-  </path>
+  <path d="M62 244H938" stroke="#fff" stroke-opacity=".5" stroke-width="1" stroke-dasharray="65 900"><animate attributeName="stroke-dashoffset" values="965;0" dur="8s" repeatCount="indefinite"/></path>
 
-  <!-- Android is the key: it unlocks the profile itself, not a phone -->
-  <g transform="translate(850 122)">
-    <animateTransform attributeName="transform" type="translate" values="850 122;850 118;850 122" dur="4s" repeatCount="indefinite"/>
-    <!-- antennae and Android silhouette -->
+  <!-- Android carries the key toward the bootloader lock -->
+  <g transform="translate(790 151)">
+    <animateTransform attributeName="transform" type="translate" values="790 151;790 147;790 151" dur="3.6s" repeatCount="indefinite"/>
     <path d="M-11 -22L-17 -31M11 -22L17 -31" fill="none" stroke="#72e2bf" stroke-width="2.6" stroke-linecap="round"/>
     <path d="M-19 -10A19 19 0 0 1 19 -10V-5H-19Z" fill="#72e2bf"/>
     <rect x="-19" y="-6" width="38" height="30" rx="7" fill="#72e2bf"/>
-    <circle cx="-7" cy="-13" r="2.2" fill="#10202a"/>
-    <circle cx="7" cy="-13" r="2.2" fill="#10202a"/>
+    <circle cx="-7" cy="-13" r="2.2" fill="#10202a"/><circle cx="7" cy="-13" r="2.2" fill="#10202a"/>
     <path d="M-24 0L-29 13M24 0L29 13M-9 24V32M9 24V32" fill="none" stroke="#72e2bf" stroke-width="4" stroke-linecap="round"/>
-    <!-- a luminous key appears above its hand -->
-    <g transform="translate(28 -25)" fill="none" stroke="#caffeb" stroke-width="2.5" stroke-linecap="round" filter="url(#softGlow)">
-      <animateTransform attributeName="transform" type="translate" values="28 -25;32 -30;28 -25" dur="2.8s" repeatCount="indefinite"/>
-      <circle r="6"/>
-      <path d="M6 0H23M18 0V5M23 0V5"/>
+    <!-- Raised arm holding the key -->
+    <path d="M22 2L35 -8" stroke="#72e2bf" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Key travels into the keyhole, rotates, then withdraws -->
+  <g transform="translate(840 130)" fill="none" stroke="#d5ffef" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="840 130;840 130;873 103;873 103;873 103;840 130;840 130" keyTimes="0;.22;.38;.48;.64;.78;1" dur="7s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0;0;0;90;90;0;0" keyTimes="0;.22;.38;.48;.64;.78;1" dur="7s" repeatCount="indefinite"/>
+      <circle cx="-8" cy="0" r="7"/><path d="M-1 0H27M18 0V6M25 0V6"/>
     </g>
   </g>
 
-  <!-- A lock-shaped glyph opens as Android turns the key -->
-  <g transform="translate(916 75)" fill="none" stroke="#72e2bf" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="-13" y="-2" width="26" height="22" rx="5" fill="#72e2bf" fill-opacity=".12"/>
-    <path d="M-8 -2V-10A8 8 0 0 1 8 -10V-2">
-      <animate attributeName="d" values="M-8 -2V-10A8 8 0 0 1 8 -10V-2;M-8 -2V-10A8 8 0 0 1 8 -10;M-8 -2V-10A8 8 0 0 1 8 -10" keyTimes="0;.42;1" dur="5s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="rotate" values="0 8 -2;0 8 -2;42 8 -2;42 8 -2;0 8 -2" keyTimes="0;.35;.48;.86;1" dur="5s" repeatCount="indefinite"/>
-    </path>
-    <circle cx="0" cy="8" r="2" fill="#72e2bf"/>
+  <!-- The lock is the focal point; its shackle swings open when the key turns -->
+  <g transform="translate(910 88)" stroke="#72e2bf" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-24" y="-2" width="48" height="43" rx="9" fill="#72e2bf" fill-opacity=".13"/>
+    <g fill="none">
+      <path d="M-14 -2V-17A14 14 0 0 1 14 -17V-2">
+        <animateTransform attributeName="transform" type="rotate" values="0 14 -2;0 14 -2;48 14 -2;48 14 -2;0 14 -2" keyTimes="0;.38;.5;.78;1" dur="7s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <circle cx="0" cy="15" r="4" fill="#72e2bf" stroke="none"/>
+    <path d="M0 18V25" stroke-width="3"/>
+    <circle cx="0" cy="18" r="30" fill="none" stroke="#72e2bf" stroke-opacity=".25" stroke-dasharray="2 7">
+      <animate attributeName="r" values="30;30;42;30" keyTimes="0;.48;.58;1" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".25;.25;0;.25" keyTimes="0;.48;.62;1" dur="7s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
-  <!-- The unlock wave sweeps across and reveals every part of the header -->
-  <rect x="0" y="0" width="1000" height="270" fill="#0b1424" opacity=".98">
-    <animate attributeName="x" values="0;0;-1000;-1000;0" keyTimes="0;.36;.58;.86;1" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values=".98;.98;0;0;.98" keyTimes="0;.36;.58;.86;1" dur="8s" repeatCount="indefinite"/>
+  <!-- Status indicator changes only after the lock opens -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" text-anchor="middle">
+    <text x="874" y="207" fill="#9bb0c2" font-size="10" letter-spacing="2">BOOTLOADER</text>
+    <text x="874" y="224" fill="#ffca85" font-size="11" letter-spacing="1">LOCKED</text>
+    <text x="874" y="224" fill="#72e2bf" font-size="11" letter-spacing="1" opacity="0">UNLOCKED<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.48;.55;.86;1" dur="7s" repeatCount="indefinite"/></text>
+    <text x="874" y="242" fill="#72e2bf" font-size="9" letter-spacing="1" opacity="0">READY TO EXPLORE<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.52;.6;.86;1" dur="7s" repeatCount="indefinite"/></text>
+  </g>
+
+  <!-- A clean reveal wipe over the profile copy, triggered by the turn -->
+  <rect x="0" y="0" width="770" height="270" rx="18" fill="#0b1424">
+    <animate attributeName="width" values="770;770;0;0;770" keyTimes="0;.5;.64;.86;1" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".99;.99;0;0;.99" keyTimes="0;.5;.64;.86;1" dur="7s" repeatCount="indefinite"/>
   </rect>
-  <path d="M0 0V270" stroke="#caffeb" stroke-width="3" filter="url(#softGlow)" opacity="0">
-    <animate attributeName="d" values="M0 0V270;M0 0V270;M1000 0V270;M1000 0V270;M0 0V270" keyTimes="0;.36;.58;.86;1" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.36;.42;.58;1" dur="8s" repeatCount="indefinite"/>
+  <path d="M770 0V270" stroke="#caffeb" stroke-width="3" filter="url(#glow)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.5;.56;.64;1" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="d" values="M770 0V270;M770 0V270;M0 0V270;M0 0V270;M770 0V270" keyTimes="0;.5;.64;.86;1" dur="7s" repeatCount="indefinite"/>
   </path>
 </svg>
