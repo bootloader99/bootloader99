@@ -14,7 +14,7 @@
       <stop offset="1" stop-color="#72e2bf" stop-opacity="0"/>
     </radialGradient>
     <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
@@ -26,63 +26,72 @@
   <circle cx="855" cy="90" r="190" fill="url(#glow)">
     <animate attributeName="opacity" values=".55;.95;.55" dur="7s" repeatCount="indefinite"/>
   </circle>
-  <g fill="none" stroke="url(#accent)" stroke-opacity=".24">
-    <circle cx="860" cy="112" r="88" stroke-dasharray="2 9"/>
-    <circle cx="860" cy="112" r="116" stroke-dasharray="1 13">
-      <animateTransform attributeName="transform" type="rotate" from="0 860 112" to="360 860 112" dur="55s" repeatCount="indefinite"/>
+  <g fill="none" stroke="url(#accent)" stroke-opacity=".2">
+    <circle cx="865" cy="112" r="88" stroke-dasharray="2 9"/>
+    <circle cx="865" cy="112" r="116" stroke-dasharray="1 13">
+      <animateTransform attributeName="transform" type="rotate" from="0 865 112" to="360 865 112" dur="55s" repeatCount="indefinite"/>
     </circle>
   </g>
-  <circle cx="860" cy="24" r="4" fill="#72e2bf">
-    <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" repeatCount="indefinite"/>
-  </circle>
 
-  <!-- A tiny Android tinkers with a floating interface node -->
+  <!-- Android unlocks a phone: a small nod to the curiosity that started it all -->
+  <!-- Phone -->
   <g>
-    <!-- The interface wakes up when the Android reaches toward it -->
-    <g fill="none" stroke="#72e2bf" stroke-width="1.5">
-      <path d="M895 91H920V70H937" stroke-opacity=".55" stroke-dasharray="3 4"/>
-      <circle cx="939" cy="70" r="5" fill="#72e2bf" fill-opacity=".15">
-        <animate attributeName="r" values="4;7;4" dur="3.6s" repeatCount="indefinite"/>
-        <animate attributeName="stroke-opacity" values=".35;1;.35" dur="3.6s" repeatCount="indefinite"/>
-      </circle>
-      <path d="M895 126H921V147H940" stroke-opacity=".35" stroke-dasharray="2 5"/>
-      <circle cx="942" cy="147" r="3" fill="#91b5ff" stroke="none"/>
+    <rect x="900" y="64" width="48" height="91" rx="8" fill="#0a1723" stroke="#91b5ff" stroke-opacity=".8" stroke-width="2"/>
+    <rect x="905" y="73" width="38" height="73" rx="4" fill="#142b38"/>
+    <circle cx="924" cy="150" r="1.8" fill="#91b5ff"/>
+    <g font-family="ui-monospace,monospace" font-size="6.5" fill="#91b5ff" opacity=".85">
+      <text x="909" y="91">BOOTLOADER</text>
+      <text x="909" y="102" fill="#72e2bf">LOCKED</text>
+      <text x="909" y="115" fill="#72e2bf">_ _ _ _</text>
     </g>
-    <g transform="translate(858 111)">
-      <animateTransform attributeName="transform" type="translate" values="858 111;858 104;858 111" dur="4s" repeatCount="indefinite"/>
-      <!-- antennae -->
-      <path d="M-11 -22L-17 -31M11 -22L17 -31" fill="none" stroke="#72e2bf" stroke-width="2.6" stroke-linecap="round"/>
-      <!-- body -->
-      <path d="M-20 -9A20 20 0 0 1 20 -9V-5H-20Z" fill="#72e2bf"/>
-      <rect x="-20" y="-6" width="40" height="29" rx="7" fill="#72e2bf"/>
-      <!-- eyes -->
-      <g fill="#10202a">
-        <circle cx="-7" cy="-13" r="2.2"/>
-        <circle cx="7" cy="-13" r="2.2"/>
+    <g opacity=".0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.42;.5;.88;1" dur="5s" repeatCount="indefinite"/>
+      <rect x="909" y="96" width="30" height="24" rx="3" fill="#72e2bf" fill-opacity=".12"/>
+      <g font-family="ui-monospace,monospace" font-size="6.5" fill="#72e2bf">
+        <text x="909" y="105">UNLOCKED</text>
+        <text x="909" y="116">READY TO</text>
+        <text x="909" y="125">EXPLORE</text>
       </g>
-      <!-- arms, right arm reaches to tap the glowing node -->
-      <path d="M-25 0L-30 13M24 -1L34 -13L43 -13" fill="none" stroke="#72e2bf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-        <animate attributeName="d" values="M-25 0L-30 13M24 -1L34 -13L43 -13;M-25 0L-30 13M24 -1L35 -18L45 -18;M-25 0L-30 13M24 -1L34 -13L43 -13" dur="3.6s" repeatCount="indefinite"/>
-      </path>
-      <path d="M-10 23V31M10 23V31" stroke="#72e2bf" stroke-width="4" stroke-linecap="round"/>
-      <!-- small status light -->
-      <circle cx="0" cy="9" r="2" fill="#17352f">
-        <animate attributeName="fill" values="#17352f;#91b5ff;#17352f" dur="3.6s" repeatCount="indefinite"/>
-      </circle>
     </g>
-    <!-- Tap ripple -->
-    <circle cx="903" cy="94" r="3" fill="none" stroke="#91b5ff" stroke-width="1.5" opacity="0">
-      <animate attributeName="r" values="3;15;3" dur="3.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;.75;0" dur="3.6s" repeatCount="indefinite"/>
-    </circle>
-    <!-- little data packets travel along the circuit -->
-    <circle r="2.5" fill="#91b5ff" filter="url(#softGlow)">
-      <animateMotion path="M895 91H920V70H937" dur="3.6s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="2" fill="#72e2bf">
-      <animateMotion path="M895 126H921V147H940" dur="4.8s" repeatCount="indefinite"/>
-    </circle>
+    <!-- Lock body and shackle -->
+    <rect x="914" y="35" width="20" height="19" rx="4" fill="#72e2bf"/>
+    <path d="M918 37V30A6 6 0 0 1 930 30V37" fill="none" stroke="#72e2bf" stroke-width="3" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" values="0 924 37;0 924 37;-38 924 37;-38 924 37;0 924 37" keyTimes="0;.38;.48;.88;1" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="924" cy="44" r="2.2" fill="#10202a"/>
+    <path d="M924 46V50" stroke="#10202a" stroke-width="1.8" stroke-linecap="round"/>
   </g>
+
+  <!-- Android approaches the lock, reaches up to turn the key, then steps back -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;7 -2;7 -2;0 0" keyTimes="0;.2;.38;.8;1" dur="5s" repeatCount="indefinite"/>
+    <g transform="translate(850 128)">
+      <animateTransform attributeName="transform" type="translate" values="850 128;850 128;850 124;850 124;850 128" keyTimes="0;.2;.38;.8;1" dur="5s" repeatCount="indefinite"/>
+      <path d="M-10 -20L-15 -28M10 -20L15 -28" fill="none" stroke="#72e2bf" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M-17 -11A17 17 0 0 1 17 -11V-6H-17Z" fill="#72e2bf"/>
+      <rect x="-17" y="-7" width="34" height="27" rx="6" fill="#72e2bf"/>
+      <circle cx="-6" cy="-13" r="2" fill="#10202a"/>
+      <circle cx="6" cy="-13" r="2" fill="#10202a"/>
+      <path d="M-22 0L-27 12M18 -1L28 -23" fill="none" stroke="#72e2bf" stroke-width="4" stroke-linecap="round">
+        <animate attributeName="d" values="M-22 0L-27 12M18 -1L28 -23;M-22 0L-27 12M18 -1L27 -31;M-22 0L-27 12M18 -1L28 -23" keyTimes="0;.4;.8" dur="5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M-9 20V28M9 20V28" stroke="#72e2bf" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+  <!-- A small key travels from Android's hand to the lock -->
+  <g fill="none" stroke="#caffeb" stroke-width="2.5" stroke-linecap="round" filter="url(#softGlow)">
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.28;.34;.48;.54" dur="5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="878 105;878 105;900 54;900 54;900 54" keyTimes="0;.28;.42;.48;1" dur="5s" repeatCount="indefinite"/>
+      <circle cx="0" cy="0" r="5"/>
+      <path d="M5 0H19M15 0V4M19 0V4"/>
+    </g>
+  </g>
+  <!-- Unlock confirmation pulse -->
+  <circle cx="924" cy="109" r="4" fill="none" stroke="#72e2bf" stroke-width="1.5" opacity="0">
+    <animate attributeName="r" values="4;22;4" keyTimes="0;.5;1" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;.8;0" keyTimes="0;.5;1" dur="5s" repeatCount="indefinite"/>
+  </circle>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
     <text x="62" y="54" fill="#9bb0c2" font-size="13" letter-spacing="2">A MINDSET, NOT A STACK</text>
