@@ -1,4 +1,4 @@
-![Hisham — curious engineer, building with intent](./assets/profile-header.svg?v=2)
+![Hisham — curious engineer, building with intent](./assets/profile-header.svg?v=3)
 
 <div align="center">
 
