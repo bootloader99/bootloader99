@@ -14,7 +14,7 @@
       <stop offset="1" stop-color="#72e2bf" stop-opacity="0"/>
     </radialGradient>
     <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
@@ -33,66 +33,7 @@
     </circle>
   </g>
 
-  <!-- Android unlocks a phone: a small nod to the curiosity that started it all -->
-  <!-- Phone -->
-  <g>
-    <rect x="900" y="64" width="48" height="91" rx="8" fill="#0a1723" stroke="#91b5ff" stroke-opacity=".8" stroke-width="2"/>
-    <rect x="905" y="73" width="38" height="73" rx="4" fill="#142b38"/>
-    <circle cx="924" cy="150" r="1.8" fill="#91b5ff"/>
-    <g font-family="ui-monospace,monospace" font-size="6.5" fill="#91b5ff" opacity=".85">
-      <text x="909" y="91">BOOTLOADER</text>
-      <text x="909" y="102" fill="#72e2bf">LOCKED</text>
-      <text x="909" y="115" fill="#72e2bf">_ _ _ _</text>
-    </g>
-    <g opacity=".0">
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.42;.5;.88;1" dur="5s" repeatCount="indefinite"/>
-      <rect x="909" y="96" width="30" height="24" rx="3" fill="#72e2bf" fill-opacity=".12"/>
-      <g font-family="ui-monospace,monospace" font-size="6.5" fill="#72e2bf">
-        <text x="909" y="105">UNLOCKED</text>
-        <text x="909" y="116">READY TO</text>
-        <text x="909" y="125">EXPLORE</text>
-      </g>
-    </g>
-    <!-- Lock body and shackle -->
-    <rect x="914" y="35" width="20" height="19" rx="4" fill="#72e2bf"/>
-    <path d="M918 37V30A6 6 0 0 1 930 30V37" fill="none" stroke="#72e2bf" stroke-width="3" stroke-linecap="round">
-      <animateTransform attributeName="transform" type="rotate" values="0 924 37;0 924 37;-38 924 37;-38 924 37;0 924 37" keyTimes="0;.38;.48;.88;1" dur="5s" repeatCount="indefinite"/>
-    </path>
-    <circle cx="924" cy="44" r="2.2" fill="#10202a"/>
-    <path d="M924 46V50" stroke="#10202a" stroke-width="1.8" stroke-linecap="round"/>
-  </g>
-
-  <!-- Android approaches the lock, reaches up to turn the key, then steps back -->
-  <g>
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;7 -2;7 -2;0 0" keyTimes="0;.2;.38;.8;1" dur="5s" repeatCount="indefinite"/>
-    <g transform="translate(850 128)">
-      <animateTransform attributeName="transform" type="translate" values="850 128;850 128;850 124;850 124;850 128" keyTimes="0;.2;.38;.8;1" dur="5s" repeatCount="indefinite"/>
-      <path d="M-10 -20L-15 -28M10 -20L15 -28" fill="none" stroke="#72e2bf" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M-17 -11A17 17 0 0 1 17 -11V-6H-17Z" fill="#72e2bf"/>
-      <rect x="-17" y="-7" width="34" height="27" rx="6" fill="#72e2bf"/>
-      <circle cx="-6" cy="-13" r="2" fill="#10202a"/>
-      <circle cx="6" cy="-13" r="2" fill="#10202a"/>
-      <path d="M-22 0L-27 12M18 -1L28 -23" fill="none" stroke="#72e2bf" stroke-width="4" stroke-linecap="round">
-        <animate attributeName="d" values="M-22 0L-27 12M18 -1L28 -23;M-22 0L-27 12M18 -1L27 -31;M-22 0L-27 12M18 -1L28 -23" keyTimes="0;.4;.8" dur="5s" repeatCount="indefinite"/>
-      </path>
-      <path d="M-9 20V28M9 20V28" stroke="#72e2bf" stroke-width="4" stroke-linecap="round"/>
-    </g>
-  </g>
-  <!-- A small key travels from Android's hand to the lock -->
-  <g fill="none" stroke="#caffeb" stroke-width="2.5" stroke-linecap="round" filter="url(#softGlow)">
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.28;.34;.48;.54" dur="5s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="translate" values="878 105;878 105;900 54;900 54;900 54" keyTimes="0;.28;.42;.48;1" dur="5s" repeatCount="indefinite"/>
-      <circle cx="0" cy="0" r="5"/>
-      <path d="M5 0H19M15 0V4M19 0V4"/>
-    </g>
-  </g>
-  <!-- Unlock confirmation pulse -->
-  <circle cx="924" cy="109" r="4" fill="none" stroke="#72e2bf" stroke-width="1.5" opacity="0">
-    <animate attributeName="r" values="4;22;4" keyTimes="0;.5;1" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;.8;0" keyTimes="0;.5;1" dur="5s" repeatCount="indefinite"/>
-  </circle>
-
+  <!-- The profile begins concealed; the unlock pulse reveals the story beneath -->
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
     <text x="62" y="54" fill="#9bb0c2" font-size="13" letter-spacing="2">A MINDSET, NOT A STACK</text>
     <text x="60" y="126" fill="#f4f7fb" font-size="51" font-weight="700" letter-spacing="-1.8">Hey, I'm Hisham.</text>
@@ -105,5 +46,43 @@
   <path d="M62 244H938" stroke="url(#accent)" stroke-opacity=".7" stroke-width="2"/>
   <path d="M62 244H938" stroke="#ffffff" stroke-opacity=".5" stroke-width="1" stroke-dasharray="65 900">
     <animate attributeName="stroke-dashoffset" values="965;0" dur="8s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Android is the key: it unlocks the profile itself, not a phone -->
+  <g transform="translate(850 122)">
+    <animateTransform attributeName="transform" type="translate" values="850 122;850 118;850 122" dur="4s" repeatCount="indefinite"/>
+    <!-- antennae and Android silhouette -->
+    <path d="M-11 -22L-17 -31M11 -22L17 -31" fill="none" stroke="#72e2bf" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M-19 -10A19 19 0 0 1 19 -10V-5H-19Z" fill="#72e2bf"/>
+    <rect x="-19" y="-6" width="38" height="30" rx="7" fill="#72e2bf"/>
+    <circle cx="-7" cy="-13" r="2.2" fill="#10202a"/>
+    <circle cx="7" cy="-13" r="2.2" fill="#10202a"/>
+    <path d="M-24 0L-29 13M24 0L29 13M-9 24V32M9 24V32" fill="none" stroke="#72e2bf" stroke-width="4" stroke-linecap="round"/>
+    <!-- a luminous key appears above its hand -->
+    <g transform="translate(28 -25)" fill="none" stroke="#caffeb" stroke-width="2.5" stroke-linecap="round" filter="url(#softGlow)">
+      <animateTransform attributeName="transform" type="translate" values="28 -25;32 -30;28 -25" dur="2.8s" repeatCount="indefinite"/>
+      <circle r="6"/>
+      <path d="M6 0H23M18 0V5M23 0V5"/>
+    </g>
+  </g>
+
+  <!-- A lock-shaped glyph opens as Android turns the key -->
+  <g transform="translate(916 75)" fill="none" stroke="#72e2bf" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-13" y="-2" width="26" height="22" rx="5" fill="#72e2bf" fill-opacity=".12"/>
+    <path d="M-8 -2V-10A8 8 0 0 1 8 -10V-2">
+      <animate attributeName="d" values="M-8 -2V-10A8 8 0 0 1 8 -10V-2;M-8 -2V-10A8 8 0 0 1 8 -10;M-8 -2V-10A8 8 0 0 1 8 -10" keyTimes="0;.42;1" dur="5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 8 -2;0 8 -2;42 8 -2;42 8 -2;0 8 -2" keyTimes="0;.35;.48;.86;1" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="0" cy="8" r="2" fill="#72e2bf"/>
+  </g>
+
+  <!-- The unlock wave sweeps across and reveals every part of the header -->
+  <rect x="0" y="0" width="1000" height="270" fill="#0b1424" opacity=".98">
+    <animate attributeName="x" values="0;0;-1000;-1000;0" keyTimes="0;.36;.58;.86;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".98;.98;0;0;.98" keyTimes="0;.36;.58;.86;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <path d="M0 0V270" stroke="#caffeb" stroke-width="3" filter="url(#softGlow)" opacity="0">
+    <animate attributeName="d" values="M0 0V270;M0 0V270;M1000 0V270;M1000 0V270;M0 0V270" keyTimes="0;.36;.58;.86;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.36;.42;.58;1" dur="8s" repeatCount="indefinite"/>
   </path>
 </svg>
