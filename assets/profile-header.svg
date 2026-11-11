@@ -13,6 +13,10 @@
       <stop offset="0" stop-color="#72e2bf" stop-opacity=".22"/>
       <stop offset="1" stop-color="#72e2bf" stop-opacity="0"/>
     </radialGradient>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
   <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
     <path d="M32 0H0V32" fill="none" stroke="#dcecff" stroke-opacity=".055" stroke-width="1"/>
@@ -32,22 +36,52 @@
     <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- A small Android companion, gently floating in the orbit -->
-  <g transform="translate(860 108)">
-    <animateTransform attributeName="transform" type="translate" values="860 108;860 99;860 108" dur="3.8s" repeatCount="indefinite" />
-    <g stroke="#72e2bf" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M-13 -20L-20 -30M13 -20L20 -30" fill="none"/>
-      <path d="M-18 -15A18 18 0 0 1 18 -15V-8H-18Z" fill="#72e2bf" fill-opacity=".95" stroke="none"/>
-      <rect x="-18" y="-7" width="36" height="29" rx="5" fill="#72e2bf" fill-opacity=".95" stroke="none"/>
-      <path d="M-25 -4V14M25 -4V14M-10 22V32M10 22V32" fill="none"/>
-      <circle cx="-7" cy="-12" r="1.8" fill="#10202a" stroke="none"/>
-      <circle cx="7" cy="-12" r="1.8" fill="#10202a" stroke="none"/>
+  <!-- A tiny Android tinkers with a floating interface node -->
+  <g>
+    <!-- The interface wakes up when the Android reaches toward it -->
+    <g fill="none" stroke="#72e2bf" stroke-width="1.5">
+      <path d="M895 91H920V70H937" stroke-opacity=".55" stroke-dasharray="3 4"/>
+      <circle cx="939" cy="70" r="5" fill="#72e2bf" fill-opacity=".15">
+        <animate attributeName="r" values="4;7;4" dur="3.6s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values=".35;1;.35" dur="3.6s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M895 126H921V147H940" stroke-opacity=".35" stroke-dasharray="2 5"/>
+      <circle cx="942" cy="147" r="3" fill="#91b5ff" stroke="none"/>
     </g>
-    <g fill="none" stroke="#91b5ff" stroke-opacity=".8" stroke-width="1.5">
-      <path d="M-29 2L-34 6M29 2L34 6">
-        <animate attributeName="opacity" values=".25;1;.25" dur="2.4s" repeatCount="indefinite"/>
+    <g transform="translate(858 111)">
+      <animateTransform attributeName="transform" type="translate" values="858 111;858 104;858 111" dur="4s" repeatCount="indefinite"/>
+      <!-- antennae -->
+      <path d="M-11 -22L-17 -31M11 -22L17 -31" fill="none" stroke="#72e2bf" stroke-width="2.6" stroke-linecap="round"/>
+      <!-- body -->
+      <path d="M-20 -9A20 20 0 0 1 20 -9V-5H-20Z" fill="#72e2bf"/>
+      <rect x="-20" y="-6" width="40" height="29" rx="7" fill="#72e2bf"/>
+      <!-- eyes -->
+      <g fill="#10202a">
+        <circle cx="-7" cy="-13" r="2.2"/>
+        <circle cx="7" cy="-13" r="2.2"/>
+      </g>
+      <!-- arms, right arm reaches to tap the glowing node -->
+      <path d="M-25 0L-30 13M24 -1L34 -13L43 -13" fill="none" stroke="#72e2bf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <animate attributeName="d" values="M-25 0L-30 13M24 -1L34 -13L43 -13;M-25 0L-30 13M24 -1L35 -18L45 -18;M-25 0L-30 13M24 -1L34 -13L43 -13" dur="3.6s" repeatCount="indefinite"/>
       </path>
+      <path d="M-10 23V31M10 23V31" stroke="#72e2bf" stroke-width="4" stroke-linecap="round"/>
+      <!-- small status light -->
+      <circle cx="0" cy="9" r="2" fill="#17352f">
+        <animate attributeName="fill" values="#17352f;#91b5ff;#17352f" dur="3.6s" repeatCount="indefinite"/>
+      </circle>
     </g>
+    <!-- Tap ripple -->
+    <circle cx="903" cy="94" r="3" fill="none" stroke="#91b5ff" stroke-width="1.5" opacity="0">
+      <animate attributeName="r" values="3;15;3" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.75;0" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <!-- little data packets travel along the circuit -->
+    <circle r="2.5" fill="#91b5ff" filter="url(#softGlow)">
+      <animateMotion path="M895 91H920V70H937" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#72e2bf">
+      <animateMotion path="M895 126H921V147H940" dur="4.8s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
