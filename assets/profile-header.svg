@@ -13,10 +13,10 @@
       <stop offset="0" stop-color="#72e2bf" stop-opacity=".22"/>
       <stop offset="1" stop-color="#72e2bf" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#dcecff" stroke-opacity=".055" stroke-width="1"/>
-    </pattern>
   </defs>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#dcecff" stroke-opacity=".055" stroke-width="1"/>
+  </pattern>
   <rect width="1000" height="270" rx="18" fill="url(#bg)"/>
   <rect width="1000" height="270" rx="18" fill="url(#grid)"/>
   <circle cx="855" cy="90" r="190" fill="url(#glow)">
@@ -31,6 +31,25 @@
   <circle cx="860" cy="24" r="4" fill="#72e2bf">
     <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" repeatCount="indefinite"/>
   </circle>
+
+  <!-- A small Android companion, gently floating in the orbit -->
+  <g transform="translate(860 108)">
+    <animateTransform attributeName="transform" type="translate" values="860 108;860 99;860 108" dur="3.8s" repeatCount="indefinite" />
+    <g stroke="#72e2bf" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-13 -20L-20 -30M13 -20L20 -30" fill="none"/>
+      <path d="M-18 -15A18 18 0 0 1 18 -15V-8H-18Z" fill="#72e2bf" fill-opacity=".95" stroke="none"/>
+      <rect x="-18" y="-7" width="36" height="29" rx="5" fill="#72e2bf" fill-opacity=".95" stroke="none"/>
+      <path d="M-25 -4V14M25 -4V14M-10 22V32M10 22V32" fill="none"/>
+      <circle cx="-7" cy="-12" r="1.8" fill="#10202a" stroke="none"/>
+      <circle cx="7" cy="-12" r="1.8" fill="#10202a" stroke="none"/>
+    </g>
+    <g fill="none" stroke="#91b5ff" stroke-opacity=".8" stroke-width="1.5">
+      <path d="M-29 2L-34 6M29 2L34 6">
+        <animate attributeName="opacity" values=".25;1;.25" dur="2.4s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
     <text x="62" y="54" fill="#9bb0c2" font-size="13" letter-spacing="2">A MINDSET, NOT A STACK</text>
     <text x="60" y="126" fill="#f4f7fb" font-size="51" font-weight="700" letter-spacing="-1.8">Hey, I'm Hisham.</text>
